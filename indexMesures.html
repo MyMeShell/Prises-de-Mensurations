@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Mensurations</title>
+    <link rel="stylesheet" href="stylesMesures.css">
+</head>
+<body>
+    <header>
+        <h1>Mes Mensurations</h1>
+        <p>Que souhaitez vous faire ?</p>
+    </header>
+    <section class="page">
+        <div class="choice" data-category="create">
+            <img src="imagesMensurations/Créer-mensurations.jpg" alt="Image créer ses mensurations" class="picture-sizeat-center">
+            <h2 class="at-center">Créer une mensuration</h2>
+            <p class="at-center">Je peux créer une nouvelle mensurations. Les nouvelles mensurations créées sont enregistrées.</p>
+            <button class="access-button" data-category="access">Accèder</button>
+        </div>
+        <div class="choice" data-category="saved">
+            <img src="imagesMensurations/Mensurations-enregistrées.jpg" alt="Image voir ses mesnurations" class="picture-size at-center">
+            <h2 class="at-center">Consulter mes mensurations</h2>
+            <p  class="at-center">Je peux voir dans cette catégoerie l'ensemble de mes mensurations enregistrées.</p>
+            <button class="access-button" data-category="access">Accèder</button>
+        </div>        
+    </section>
+    <section class="page" id="onglet-create">
+        <div class="body-choiced">
+            <div class="body-choiced">
+              <h2>Créer ma nouvelle mensuration</h2>
+              <p>Lorsque vous décidez de vous faire faire des vêtements sur mesure, <br>il est important de prendre des mesures précises pour garantir un ajustement parfait. <br>Voici les mensurations que vous devez relever :</p>
+
+
+            </div> 
+            <div class="choiced">
+                <label for="nom-du-formulaire">Séléctionnez un titre pour votre formulaire ?</label>
+                <input type="text" id="nom-du-formulaire">
+
+                <label for="tour-de-poitrine">Quel est votre Tour de poitrine ?</label>
+                <p>Mesurez horizontalement autour de la partie la plus large de votre poitrine, sous vos bras et sur les omoplates.</p>
+                <input type="number" id="tour-de-poitrine">
+
+                <label for="tour-de-taille"><br>Quel est votre Tour de taille ?</label>
+                <p>Mesurez autour de votre taille naturelle, généralement juste au-dessus du nombril.</p>
+                <input type="number" id="tour-de-taille">
+
+                <label for="tour-de-hanches"><br>Quel est votre Tour de hanches ?</label>
+                <p>Mesurez autour de la partie la plus large de vos hanches, en général à environ 20 cm en dessous de la taille.</p>
+                <input type="number" id="tour-de-hanches">
+
+                <label for="longueur-d-épaule"><br>Quel est votre Longueur d'épaule ?</label>
+                <p>Mesurez de la pointe de l'épaule à la base du cou, là où commence le cou.</p>
+                <input type="number" id="longueur-d-épaule">
+
+                <label for="longueur-de-manche"><br>Quel est votre Longueur de manche ?</label>
+                <p>Mesurez de l'épaule au poignet, en passant par le coude légèrement plié.</p>
+                <input type="number" id="longueur-de-manche">
+
+                <label for="tour-de-bras"><br>Quel est votre Tour de bras ?</label>
+                <p>Mesurez autour de la partie la plus large de votre bras.</p>
+                <input type="number" id="tour-de-bras">
+
+                <label for="longueur-pontalon-jupe"><br>Quel est votre Longueur de pantalon/jupe ?</label>
+                <p>Pour un pantalon, mesurez de la taille à la cheville. Pour une jupe, mesurez de la taille à la longueur souhaitée.</p>
+                <input type="number" id="longueur-pontalon-jupe">
+
+                <label for="longueur-d-entrejambe"><br>Quel est votre Longueur d'entrejambe ?</label>
+                <p>Pour un pantalon, mesurez de l'entrejambe à la cheville.</p>
+                <input type="number" id="longueur-d-entrejambe">
+
+                <label for="tour-de-cou"><br>Quel est votre Tour de cou ?</label>
+                <p>Mesurez autour de la base de votre cou, où le col d'une chemise se trouve habituellement.</p>
+                <input type="number" id="tour-de-cou">
+
+                <label for="hauteur"><br>Quel est votre Hauteur ?</label>
+                <p>Mesurez votre hauteur pieds nus, de la tête aux pieds.</p>
+                <input type="number" id="hauteur">
+
+                <label for="carrure"><br>Quel est votre Carrure ?</label>
+                <p>Mesurez d'une épaule à l'autre, en passant par le haut du dos.</p>
+                <input type="number" id="carrure">
+
+                <label for="tour-de-poignet"><br>Quel est votre Tour de poignet ?</label>
+                <p>Mesurez autour de votre poignet.</p>
+                <input type="number" id="tour-de-poignet">
+
+                <label for="tour-de-cuisse"><br>Quel est votre Tour de cuisse ?</label>
+                <p>Mesurez autour de la partie la plus large de votre cuisse.</p>
+                <input type="number" id="tour-de-cuisse">
+                
+                <label for="tour-de-mollet"><br>Quel est votre Tour de mollet ?</label>
+                <p>Mesurez autour de la partie la plus large de votre mollet.</p>
+                <input type="number" id="tour-de-mollet">
+                
+                <label for="tour-de-cheville"><br>Quel est votre Tour de cheville ?</label>
+                <p>Mesurez autour de votre cheville.</p>
+                <input type="number" id="tour-de-cheville">
+
+                <p>Ces mensurations vous aideront à obtenir des vêtements sur mesure qui s'ajustent parfaitement à votre corps. Il est recommandé de demander l'aide de quelqu'un pour prendre ces mesures afin de vous assurer qu'elles sont prises avec précision.</p>
+
+            </div>
+            <div class="footer-buttons">
+                <button class="access-button" data-category="access">Retour</button>
+                <button class="access-button" data-category="access">Enregistrer</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="page" id="onglet-saved">
+        <div class="body-choiced">
+            <div>
+                <h2>Voici mes mensurations enregistrées</h2>
+
+
+            
+            </div>  
+            <section class="page">
+                <div>    
+                    <div class="choice" data-category="create">
+                        <img src="imagesMensurations/vetements-mannequin.avif" alt="Image voir ses mensurations enregistrées" class="picture-size at-center">
+                        <h2 class="at-center">Mes mensuration</h2>
+                        <p class="at-center">Je peux consulter mes mensurations enregistrées.</p>
+                        <button class="access-button" data-category="access">Accèder</button>
+                    </div>
+                    <div class="choice" data-category="saved">
+                        <img src="imagesMensurations/vetements_magasin.avif" alt="Image voir mensurations standards" class="picture-size at-center">
+                        <h2 class="at-center">Mensurations standards</h2>
+                        <p  class="at-center">Je peux voir dans cette catégoerie les mensurations standards.</p>
+                        <button class="access-button" data-category="access">Accèder</button>
+                    </div>        
+                </div>
+                <div>
+
+
+
+                </div>
+
+            </section>
+            <div class="footer-buttons">
+                <button class="access-button" data-category="access">Retour</button>
+                <button class="access-button" data-category="access">Enregistrer</button>
+            </div>    
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="scriptPortfolio.js"></script>
+</body>
+</html>
