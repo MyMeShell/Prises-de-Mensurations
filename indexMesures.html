@@ -11,21 +11,21 @@
         <h1>Mes Mensurations</h1>
         <p>Que souhaitez vous faire ?</p>
     </header>
-    <section class="page">
+    <section class="page" id="tab-home">
         <div class="choice" data-category="create">
             <img src="imagesMensurations/Créer-mensurations.jpg" alt="Image créer ses mensurations" class="picture-sizeat-center">
             <h2 class="at-center">Créer une mensuration</h2>
             <p class="at-center">Je peux créer une nouvelle mensurations. Les nouvelles mensurations créées sont enregistrées.</p>
-            <button class="access-button" data-category="access">Accèder</button>
+            <button class="access-button " onclick="changePage('tab-create')">Accèder</button>
         </div>
         <div class="choice" data-category="saved">
             <img src="imagesMensurations/Mensurations-enregistrées.jpg" alt="Image voir ses mesnurations" class="picture-size at-center">
             <h2 class="at-center">Consulter mes mensurations</h2>
             <p  class="at-center">Je peux voir dans cette catégoerie l'ensemble de mes mensurations enregistrées.</p>
-            <button class="access-button" data-category="access">Accèder</button>
+            <button class="access-button" onclick="changePage('tab-saved')">Accèder</button>
         </div>        
     </section>
-    <section class="page" id="onglet-create">
+    <section class="page" id="tab-create">
         <div class="body-choiced">
             <div class="body-choiced">
               <h2>Créer ma nouvelle mensuration</h2>
@@ -101,14 +101,14 @@
 
             </div>
             <div class="footer-buttons">
-                <button class="access-button" data-category="access">Retour</button>
-                <button class="access-button" data-category="access">Enregistrer</button>
+                <button class="access-button" onclick="changePage('tab-home')">Retour</button>
+                <button class="access-button" onclick="SaveCreation('tab-home')">Enregistrer</button>
             </div>
         </div>
     </section>
 
 
-    <section class="page" id="onglet-saved">
+    <section class="page" id="tab-saved">
         <div class="body-choiced">
             <div>
                 <h2>Voici mes mensurations enregistrées</h2>
@@ -122,13 +122,13 @@
                         <img src="imagesMensurations/vetements-mannequin.avif" alt="Image voir ses mensurations enregistrées" class="picture-size at-center">
                         <h2 class="at-center">Mes mensuration</h2>
                         <p class="at-center">Je peux consulter mes mensurations enregistrées.</p>
-                        <button class="access-button" data-category="access">Accèder</button>
+                        <button class="access-button" onclick="changePage('tab-home')">Accèder</button>
                     </div>
                     <div class="choice" data-category="saved">
                         <img src="imagesMensurations/vetements_magasin.avif" alt="Image voir mensurations standards" class="picture-size at-center">
                         <h2 class="at-center">Mensurations standards</h2>
                         <p  class="at-center">Je peux voir dans cette catégoerie les mensurations standards.</p>
-                        <button class="access-button" data-category="access">Accèder</button>
+                        <button class="access-button" onclick="changePage('tab-home')">Accèder</button>
                     </div>        
                 </div>
                 <div>
@@ -139,8 +139,7 @@
 
             </section>
             <div class="footer-buttons">
-                <button class="access-button" data-category="access">Retour</button>
-                <button class="access-button" data-category="access">Enregistrer</button>
+                <button class="access-button" onclick="changePage('tab-home')">Retour</button>
             </div>    
         </div>
     </section>
@@ -150,6 +149,6 @@
 
 
 
-    <script src="scriptPortfolio.js"></script>
+    <script src="scriptMesures.js"></script>
 </body>
 </html>
