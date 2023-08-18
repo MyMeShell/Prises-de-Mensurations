@@ -11,7 +11,33 @@ function changePage(pageName){  // Fonction pour naviguer avec les boutons
     document.getElementById(pageName).style.display="flex";   // ne laisse que l'onglet cliqué
 };
 
-function SaveCreation(pageName){  // Fonction qui enregistre les mensurations
-    changePage(pageName);
+
+const dataTabJS = [document.getElementById("pseudo-formulaire"), document.getElementById("tour-de-poitrine")];
+
+const rubriqueFormulaire = document.getElementById("rubrique-formulaire");
+const inputsFormulaire = rubriqueFormulaire.querySelectorAll('input');
+
+console.log(rubriqueFormulaire);
+console.log(typeof(inputsFormulaire[1].id));
+
+let nombreDeFormulaires = 0;
+
+class DooneesFormulaire{
+    constructor(inputsDunFormulaire){
+        let valeursInputsFormulaire = [];
+        for(i=0;i<=inputsDunFormulaire.length;i++){
+            valeursInputsFormulaire.push(this.inputsDunFormulaire[i].value);
+        }
+    }
 
 }
+
+
+
+function EnregistrerDonneesFormulaire(){
+    //document.getElementById("pseudo-formulaire").textContent
+    console.log(valeursInputsFormulaire[1]);
+}
+
+
+

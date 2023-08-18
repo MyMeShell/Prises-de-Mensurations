@@ -33,77 +33,89 @@
 
 
             </div> 
-            <div class="choiced">
-                <label for="nom-du-formulaire">Séléctionnez un titre pour votre formulaire ?</label>
-                <input type="text" id="nom-du-formulaire">
+            <form class="choiced" id="rubrique-formulaire">
+                <label for="nom-du-formulaire">
+                    <details>
+                        <summary>
+                            Séléctionnez un titre pour votre formulaire ?
+                        </summary>
+                        <p class="conseils">Séléctionnez le prénom ou le pseudo de la personne mesurée par exemple</p>
+                    </details>
+                </label>
+                <input type="text" id="pseudo-formulaire" value="toto">
 
-                <label for="tour-de-poitrine">Quel est votre Tour de poitrine ?</label>
-                <p>Mesurez horizontalement autour de la partie la plus large de votre poitrine, sous vos bras et sur les omoplates.</p>
-                <input type="number" id="tour-de-poitrine">
+                <label for="tour-de-poitrine">
+                    <details>
+                        <summary>
+                            Quel est votre Tour de poitrine ?
+                        </summary>
+                        <p class="conseils">Mesurez horizontalement autour de la partie la plus large de votre poitrine, sous vos bras et sur les omoplates.</p>
+                    </details>
+                </label>
+                <input type="number" id="tour-de-poitrine" value="3">
 
                 <label for="tour-de-taille"><br>Quel est votre Tour de taille ?</label>
                 <p>Mesurez autour de votre taille naturelle, généralement juste au-dessus du nombril.</p>
-                <input type="number" id="tour-de-taille">
+                <input type="number" id="tour-de-taille" value="3">
 
                 <label for="tour-de-hanches"><br>Quel est votre Tour de hanches ?</label>
                 <p>Mesurez autour de la partie la plus large de vos hanches, en général à environ 20 cm en dessous de la taille.</p>
-                <input type="number" id="tour-de-hanches">
+                <input type="number" id="tour-de-hanches" value="3">
 
                 <label for="longueur-d-épaule"><br>Quel est votre Longueur d'épaule ?</label>
                 <p>Mesurez de la pointe de l'épaule à la base du cou, là où commence le cou.</p>
-                <input type="number" id="longueur-d-épaule">
+                <input type="number" id="longueur-d-épaule" value="3">
 
                 <label for="longueur-de-manche"><br>Quel est votre Longueur de manche ?</label>
                 <p>Mesurez de l'épaule au poignet, en passant par le coude légèrement plié.</p>
-                <input type="number" id="longueur-de-manche">
+                <input type="number" id="longueur-de-manche" value="3">
 
                 <label for="tour-de-bras"><br>Quel est votre Tour de bras ?</label>
                 <p>Mesurez autour de la partie la plus large de votre bras.</p>
-                <input type="number" id="tour-de-bras">
+                <input type="number" id="tour-de-bras" value="3">
 
                 <label for="longueur-pontalon-jupe"><br>Quel est votre Longueur de pantalon/jupe ?</label>
                 <p>Pour un pantalon, mesurez de la taille à la cheville. Pour une jupe, mesurez de la taille à la longueur souhaitée.</p>
-                <input type="number" id="longueur-pontalon-jupe">
+                <input type="number" id="longueur-pontalon-jupe" value="3">
 
                 <label for="longueur-d-entrejambe"><br>Quel est votre Longueur d'entrejambe ?</label>
                 <p>Pour un pantalon, mesurez de l'entrejambe à la cheville.</p>
-                <input type="number" id="longueur-d-entrejambe">
+                <input type="number" id="longueur-d-entrejambe" value="3">
 
                 <label for="tour-de-cou"><br>Quel est votre Tour de cou ?</label>
                 <p>Mesurez autour de la base de votre cou, où le col d'une chemise se trouve habituellement.</p>
-                <input type="number" id="tour-de-cou">
+                <input type="number" id="tour-de-cou" value="3">
 
                 <label for="hauteur"><br>Quel est votre Hauteur ?</label>
                 <p>Mesurez votre hauteur pieds nus, de la tête aux pieds.</p>
-                <input type="number" id="hauteur">
+                <input type="number" id="hauteur" value="3">
 
                 <label for="carrure"><br>Quel est votre Carrure ?</label>
                 <p>Mesurez d'une épaule à l'autre, en passant par le haut du dos.</p>
-                <input type="number" id="carrure">
+                <input type="number" id="carrure" value="3">
 
                 <label for="tour-de-poignet"><br>Quel est votre Tour de poignet ?</label>
                 <p>Mesurez autour de votre poignet.</p>
-                <input type="number" id="tour-de-poignet">
+                <input type="number" id="tour-de-poignet" value="3">
 
                 <label for="tour-de-cuisse"><br>Quel est votre Tour de cuisse ?</label>
                 <p>Mesurez autour de la partie la plus large de votre cuisse.</p>
-                <input type="number" id="tour-de-cuisse">
+                <input type="number" id="tour-de-cuisse" value="3">
                 
                 <label for="tour-de-mollet"><br>Quel est votre Tour de mollet ?</label>
                 <p>Mesurez autour de la partie la plus large de votre mollet.</p>
-                <input type="number" id="tour-de-mollet">
+                <input type="number" id="tour-de-mollet" value="3">
                 
                 <label for="tour-de-cheville"><br>Quel est votre Tour de cheville ?</label>
                 <p>Mesurez autour de votre cheville.</p>
-                <input type="number" id="tour-de-cheville">
+                <input type="number" id="tour-de-cheville" value="3">
 
                 <p>Ces mensurations vous aideront à obtenir des vêtements sur mesure qui s'ajustent parfaitement à votre corps. Il est recommandé de demander l'aide de quelqu'un pour prendre ces mesures afin de vous assurer qu'elles sont prises avec précision.</p>
-
-            </div>
-            <div class="footer-buttons">
-                <button class="access-button" onclick="changePage('tab-home')">Retour</button>
-                <button class="access-button" onclick="SaveCreation('tab-home')">Enregistrer</button>
-            </div>
+                <div class="footer-buttons">
+                    <button class="access-button" onclick="changePage('tab-home')">Retour</button>
+                    <button class="access-button" type="submit" id="save-button">Enregistrer</button>
+                </div>
+            </form>            
         </div>
     </section>
 
@@ -113,31 +125,12 @@
             <div>
                 <h2>Voici mes mensurations enregistrées</h2>
 
+                <p ></p>
+
 
             
             </div>  
-            <section class="page">
-                <div>    
-                    <div class="choice" data-category="create">
-                        <img src="imagesMensurations/vetements-mannequin.avif" alt="Image voir ses mensurations enregistrées" class="picture-size at-center">
-                        <h2 class="at-center">Mes mensuration</h2>
-                        <p class="at-center">Je peux consulter mes mensurations enregistrées.</p>
-                        <button class="access-button" onclick="changePage('tab-home')">Accèder</button>
-                    </div>
-                    <div class="choice" data-category="saved">
-                        <img src="imagesMensurations/vetements_magasin.avif" alt="Image voir mensurations standards" class="picture-size at-center">
-                        <h2 class="at-center">Mensurations standards</h2>
-                        <p  class="at-center">Je peux voir dans cette catégoerie les mensurations standards.</p>
-                        <button class="access-button" onclick="changePage('tab-home')">Accèder</button>
-                    </div>        
-                </div>
-                <div>
-
-
-
-                </div>
-
-            </section>
+            
             <div class="footer-buttons">
                 <button class="access-button" onclick="changePage('tab-home')">Retour</button>
             </div>    
