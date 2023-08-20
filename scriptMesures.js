@@ -12,20 +12,21 @@ function changePage(pageName){  // Fonction pour naviguer avec les boutons
 };
 
 
-const formulairesEnreigstres = [];
+const formulairesEnreigstres = [];      // Liste des menurations enregistrées
 
-const rubriqueFormulaire = document.getElementById("rubrique-formulaire");
-const saveButton = document.getElementById('save-button');
+const rubriqueFormulaire = document.getElementById("rubrique-formulaire");      // Récupère la valeur des inputs du formulaire
+const saveButton = document.getElementById('save-button');      // Récupère la valeur du bouton enregistré
 
-let nombreDeFormulaires = -1;
+let nombreDeFormulaires = -1;   // Nombre de formualires enregistrés - 1
 
 console.log(rubriqueFormulaire);
 console.log(saveButton);
 
-const SavedMeasurement = document.getElementById('saved-measurement');
+const SavedMeasurements = document.getElementById('saved-measurements');   // Balise des mensurations enregistrées
 
 saveButton.addEventListener('click', () => {
 
+    // Récupère la valeur des inputs contenants les mensurations à enregistrer
     const pseudoFormulaire = document.getElementById('pseudo-formulaire').value;
     const tourDePoitrine = document.getElementById('tour-de-poitrine').value;
     const tourDeTaille = document.getElementById('tour-de-taille').value;
@@ -43,6 +44,7 @@ saveButton.addEventListener('click', () => {
     const tourDeMollet = document.getElementById('tour-de-mollet').value;
     const tourDeCheville = document.getElementById('tour-de-cheville').value;
  
+    // Instancie la variable locale d'objet
     const nouvellesDonnees = {
         pseudoFormulaire, 
         tourDePoitrine,
@@ -62,9 +64,9 @@ saveButton.addEventListener('click', () => {
         tourDeCheville    
     };
 
-    nombreDeFormulaires++;
-    formulairesEnreigstres.push(nouvellesDonnees);
-
+    formulairesEnreigstres.push(nouvellesDonnees);    // On implémente les valeurs des inputs (stockés dans la variable locale d'objet) à notre tableau des formulaires
+    nombreDeFormulaires++;          // on incrémente le nombre de formulaires enregistrés
+ 
     console.log(nouvellesDonnees);
     console.log(formulairesEnreigstres[0]);
 
@@ -74,11 +76,21 @@ saveButton.addEventListener('click', () => {
     console.log(Object.keys(formulairesEnreigstres[0]).length);
     console.log(formulairesEnreigstres.length);
 
+    const newMeasurment = document.createElement('div');
+    newMeasurment.id = "saved-measurement";
+    showSizes = "";
+
+    // On ajoute une balise qui va afficher les valeurs enresgitrées à notre page des mensurations sauvegardées
     for(j=0; j< Object.keys(formulairesEnreigstres[0]).length; j++){
         console.log(Object.keys(formulairesEnreigstres[nombreDeFormulaires])[j] + " : " + formulairesEnreigstres[nombreDeFormulaires][Object.keys(formulairesEnreigstres[nombreDeFormulaires])[j]]);
+        showSizes = showSizes + Object.keys(formulairesEnreigstres[nombreDeFormulaires])[j] + " : " + formulairesEnreigstres[nombreDeFormulaires][Object.keys(formulairesEnreigstres[nombreDeFormulaires])[j]] + "\n";
+        showSizes.split('\n');
     }
-    
+    console.log(showSizes);
+    newMeasurment.textContent = showSizes;
+    SavedMeasurements.appendChild(newMeasurment);
 
 
-    changePage("tab-home");
+
+    changePage("tab-home");  //Nous dirige à la page Home
 });
