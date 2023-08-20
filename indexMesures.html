@@ -34,15 +34,15 @@
 
             </div> 
             <form class="choiced" id="rubrique-formulaire">
-                <label for="nom-du-formulaire">
+                <label for="pseudo-formulaire">
                     <details>
                         <summary>
-                            Séléctionnez un titre pour votre formulaire ?
+                            Séléctionnez un titre pour votre formulaire
                         </summary>
                         <p class="conseils">Séléctionnez le prénom ou le pseudo de la personne mesurée par exemple</p>
                     </details>
+                    <input type="text" id="pseudo-formulaire" value="toto">
                 </label>
-                <input type="text" id="pseudo-formulaire" value="toto">
 
                 <label for="tour-de-poitrine">
                     <details>
@@ -51,69 +51,153 @@
                         </summary>
                         <p class="conseils">Mesurez horizontalement autour de la partie la plus large de votre poitrine, sous vos bras et sur les omoplates.</p>
                     </details>
+                    <input type="number" id="tour-de-poitrine" value="3">
                 </label>
-                <input type="number" id="tour-de-poitrine" value="3">
 
-                <label for="tour-de-taille"><br>Quel est votre Tour de taille ?</label>
-                <p>Mesurez autour de votre taille naturelle, généralement juste au-dessus du nombril.</p>
-                <input type="number" id="tour-de-taille" value="3">
+                <label for="tour-de-taille">
+                    <details>
+                        <summary>                           
+                            Quel est votre Tour de taille ?>
+                       </summary>
+                       <p>Mesurez autour de votre taille naturelle, généralement juste au-dessus du nombril.</p>
+                    </details>
+                    <input type="number" id="tour-de-taille" value="3">
+                </label>
 
-                <label for="tour-de-hanches"><br>Quel est votre Tour de hanches ?</label>
-                <p>Mesurez autour de la partie la plus large de vos hanches, en général à environ 20 cm en dessous de la taille.</p>
-                <input type="number" id="tour-de-hanches" value="3">
+                <label for="tour-de-hanches">
+                    <details>
+                        <summary>                           
+                            Quel est votre Tour de hanches ?
+                       </summary>
+                       <p>Mesurez autour de la partie la plus large de vos hanches, en général à environ 20 cm en dessous de la taille.</p>
+                    </details>
+                    <input type="number" id="tour-de-hanches" value="3">
+                </label>
 
-                <label for="longueur-d-épaule"><br>Quel est votre Longueur d'épaule ?</label>
-                <p>Mesurez de la pointe de l'épaule à la base du cou, là où commence le cou.</p>
-                <input type="number" id="longueur-d-épaule" value="3">
+                <label for="longueur-d-epaule">
+                    <details>
+                        <summary>                           
+                            Quel est votre Longueur d'épaule ?
+                       </summary>
+                       <p>Mesurez de la pointe de l'épaule à la base du cou, là où commence le cou.</p>
+                    </details>
+                    <input type="number" id="longueur-d-epaule" value="3">   
+                </label>             
 
-                <label for="longueur-de-manche"><br>Quel est votre Longueur de manche ?</label>
-                <p>Mesurez de l'épaule au poignet, en passant par le coude légèrement plié.</p>
-                <input type="number" id="longueur-de-manche" value="3">
+                <label for="longueur-de-manche">
+                    <details>
+                        <summary>                           
+                            Quel est votre Longueur de manche ?
+                       </summary>
+                       <p>Mesurez de l'épaule au poignet, en passant par le coude légèrement plié.</p>
+                    </details>
+                    <input type="number" id="longueur-de-manche" value="3">    
+                </label>   
 
-                <label for="tour-de-bras"><br>Quel est votre Tour de bras ?</label>
-                <p>Mesurez autour de la partie la plus large de votre bras.</p>
-                <input type="number" id="tour-de-bras" value="3">
+                <label for="tour-de-bras">
+                    <details>
+                        <summary>                           
+                            Quel est votre Tour de bras ?
+                       </summary>
+                       <p>Mesurez autour de la partie la plus large de votre bras.</p>
+                    </details>
+                    <input type="number" id="tour-de-bras" value="3">
+                </label>
 
-                <label for="longueur-pontalon-jupe"><br>Quel est votre Longueur de pantalon/jupe ?</label>
-                <p>Pour un pantalon, mesurez de la taille à la cheville. Pour une jupe, mesurez de la taille à la longueur souhaitée.</p>
-                <input type="number" id="longueur-pontalon-jupe" value="3">
+                <label for="longueur-pontalon-jupe">
+                    <details>
+                        <summary>                           
+                            Quel est votre Longueur de pantalon/jupe ?
+                       </summary>
+                       <p>Pour un pantalon, mesurez de la taille à la cheville. Pour une jupe, mesurez de la taille à la longueur souhaitée.</p>
+                    </details>
+                    <input type="number" id="longueur-pontalon-jupe" value="3">
+                </label>
 
-                <label for="longueur-d-entrejambe"><br>Quel est votre Longueur d'entrejambe ?</label>
-                <p>Pour un pantalon, mesurez de l'entrejambe à la cheville.</p>
-                <input type="number" id="longueur-d-entrejambe" value="3">
+                <label for="longueur-d-entrejambe">
+                    <details>
+                        <summary>                           
+                            Quel est votre Longueur d'entrejambe ?
+                       </summary>
+                       <p>Pour un pantalon, mesurez de l'entrejambe à la cheville.</p>
+                    </details>
+                    <input type="number" id="longueur-d-entrejambe" value="3">
+                </label>
 
-                <label for="tour-de-cou"><br>Quel est votre Tour de cou ?</label>
-                <p>Mesurez autour de la base de votre cou, où le col d'une chemise se trouve habituellement.</p>
-                <input type="number" id="tour-de-cou" value="3">
+                <label for="tour-de-cou">
+                    <details>
+                        <summary>                           
+                            Quel est votre Tour de cou ?
+                       </summary>
+                       <p>Mesurez autour de la base de votre cou, où le col d'une chemise se trouve habituellement.</p>
+                    </details>
+                    <input type="number" id="tour-de-cou" value="3">
+                </label>
 
-                <label for="hauteur"><br>Quel est votre Hauteur ?</label>
-                <p>Mesurez votre hauteur pieds nus, de la tête aux pieds.</p>
-                <input type="number" id="hauteur" value="3">
+                <label for="hauteur">
+                    <details>
+                        <summary>                           
+                            Quel est votre Hauteur ?
+                       </summary>
+                       <p>Mesurez votre hauteur pieds nus, de la tête aux pieds.</p>
+                    </details>
+                    <input type="number" id="hauteur" value="3">
+                </label>
 
-                <label for="carrure"><br>Quel est votre Carrure ?</label>
-                <p>Mesurez d'une épaule à l'autre, en passant par le haut du dos.</p>
-                <input type="number" id="carrure" value="3">
+                <label for="carrure">
+                    <details>
+                        <summary>                           
+                            Quel est votre Carrure ?
+                       </summary>
+                       <p>Mesurez d'une épaule à l'autre, en passant par le haut du dos.</p>
+                    </details>
+                    <input type="number" id="carrure" value="3">
+                </label>
 
-                <label for="tour-de-poignet"><br>Quel est votre Tour de poignet ?</label>
-                <p>Mesurez autour de votre poignet.</p>
-                <input type="number" id="tour-de-poignet" value="3">
+                <label for="tour-de-poignet">
+                    <details>
+                        <summary>                           
+                            Quel est votre Tour de poignet ?
+                       </summary>
+                       <p>Mesurez autour de votre poignet.</p>
+                    </details>
+                    <input type="number" id="tour-de-poignet" value="3">
+                </label>
 
-                <label for="tour-de-cuisse"><br>Quel est votre Tour de cuisse ?</label>
-                <p>Mesurez autour de la partie la plus large de votre cuisse.</p>
-                <input type="number" id="tour-de-cuisse" value="3">
+                <label for="tour-de-cuisse">
+                    <details>
+                        <summary>                           
+                            Quel est votre Tour de cuisse ?
+                       </summary>
+                       <p>Mesurez autour de la partie la plus large de votre cuisse.</p>
+                    </details>
+                    <input type="number" id="tour-de-cuisse" value="3">
+                </label>
                 
-                <label for="tour-de-mollet"><br>Quel est votre Tour de mollet ?</label>
-                <p>Mesurez autour de la partie la plus large de votre mollet.</p>
-                <input type="number" id="tour-de-mollet" value="3">
+                <label for="tour-de-mollet">
+                    <details>
+                        <summary>                           
+                            Quel est votre Tour de mollet ?
+                       </summary>
+                       <p>Mesurez autour de la partie la plus large de votre mollet.</p>
+                    </details>
+                    <input type="number" id="tour-de-mollet" value="3">
+                </label>
                 
-                <label for="tour-de-cheville"><br>Quel est votre Tour de cheville ?</label>
-                <p>Mesurez autour de votre cheville.</p>
-                <input type="number" id="tour-de-cheville" value="3">
+                <label for="tour-de-cheville">
+                    <details>
+                        <summary>                           
+                            Quel est votre Tour de cheville ?
+                       </summary>
+                       <p>Mesurez autour de votre cheville.</p>
+                    </details>
+                    <input type="number" id="tour-de-cheville" value="3">
+                </label>
 
-                <p>Ces mensurations vous aideront à obtenir des vêtements sur mesure qui s'ajustent parfaitement à votre corps. Il est recommandé de demander l'aide de quelqu'un pour prendre ces mesures afin de vous assurer qu'elles sont prises avec précision.</p>
+                <p><bold>Notes </bold>: ces mensurations vous aideront à obtenir des vêtements sur mesure qui s'ajustent parfaitement à votre corps. Il est recommandé de demander l'aide de quelqu'un pour prendre ces mesures afin de vous assurer qu'elles sont prises avec précision.</p>
                 <div class="footer-buttons">
                     <button class="access-button" onclick="changePage('tab-home')">Retour</button>
-                    <button class="access-button" type="submit" id="save-button">Enregistrer</button>
+                    <button class="access-button" type="button" id="save-button">Enregistrer</button>
                 </div>
             </form>            
         </div>
@@ -125,7 +209,10 @@
             <div>
                 <h2>Voici mes mensurations enregistrées</h2>
 
-                <p ></p>
+                <div id="saved-measurements">
+
+
+                </div>
 
 
             

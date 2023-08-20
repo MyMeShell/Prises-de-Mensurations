@@ -18,6 +18,14 @@ header {
     padding: 2rem;
 }
 
+label{
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 360px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .choice {
     display: flex;
     flex-direction: column;
@@ -56,6 +64,10 @@ header {
     cursor: pointer;
 }
 
+bold{
+    font-weight: 700;
+}
+
 .at-center {
     text-align: center;
 }
@@ -71,7 +83,7 @@ header {
 .footer-buttons{
     display: flex;
     flex-direction: row;
-    border-spacing: 100px;
+    border-spacing: 30px;
 }
 
 .picture-size{
