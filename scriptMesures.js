@@ -22,7 +22,7 @@ let nombreDeFormulaires = -1;   // Nombre de formualires enregistrés - 1
 console.log(rubriqueFormulaire);
 console.log(saveButton);
 
-const SavedMeasurements = document.getElementById('saved-measurements');   // Balise des mensurations enregistrées
+
 
 saveButton.addEventListener('click', () => {
 
@@ -64,11 +64,15 @@ saveButton.addEventListener('click', () => {
         tourDeCheville    
     };
 
+    const SavedMeasurements = document.getElementById('saved-measurements');   // Balise des mensurations enregistrées
+
     formulairesEnreigstres.push(nouvellesDonnees);    // On implémente les valeurs des inputs (stockés dans la variable locale d'objet) à notre tableau des formulaires
     nombreDeFormulaires++;          // on incrémente le nombre de formulaires enregistrés
  
     console.log(nouvellesDonnees);
     console.log(formulairesEnreigstres[0]);
+    console.log(formulairesEnreigstres[nombreDeFormulaires]);
+    console.log(typeof(formulairesEnreigstres[nombreDeFormulaires]));
 
     
     console.log(Object.keys(formulairesEnreigstres[0])[0] + " : " + formulairesEnreigstres[0][Object.keys(formulairesEnreigstres[0])[0]]);
@@ -76,8 +80,6 @@ saveButton.addEventListener('click', () => {
     console.log(Object.keys(formulairesEnreigstres[0]).length);
     console.log(formulairesEnreigstres.length);
 
-    const newMeasurment = document.createElement('div');
-    newMeasurment.id = "saved-measurement";
     showSizes = "";
 
     // On ajoute une balise qui va afficher les valeurs enresgitrées à notre page des mensurations sauvegardées
@@ -87,10 +89,26 @@ saveButton.addEventListener('click', () => {
         showSizes.split('\n');
     }
     console.log(showSizes);
-    newMeasurment.textContent = showSizes;
-    SavedMeasurements.appendChild(newMeasurment);
 
+    const measurementTab = document.createElement('table');
+    //measurementTab.style.width = '50%';
 
+    for(const propriete in formulairesEnreigstres[nombreDeFormulaires]){
+        const ligne = document.createElement('tr');
+        const cellulePropriete = document.createElement('td');
+        const celluleValeur = document.createElement('td');
+    
+        cellulePropriete.textContent = propriete;
+        celluleValeur.textContent = formulairesEnreigstres[nombreDeFormulaires][propriete];
+
+        ligne.appendChild(cellulePropriete);
+        ligne.appendChild(celluleValeur);
+
+        measurementTab.appendChild(ligne);
+
+    }
+
+    SavedMeasurements.appendChild(measurementTab);
 
     changePage("tab-home");  //Nous dirige à la page Home
 });
